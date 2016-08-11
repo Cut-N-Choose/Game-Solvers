@@ -1,13 +1,13 @@
 
 all: MajorityCut SingleCut BatchedCut
 	
-MajorityCut: MajorityCut.c MCLPS.c test_MajorityCut.c
-	gcc test_MajorityCut.c MajorityCut.c MCLPS.c -o MajorityCut
+MajorityCut: test/test_MajorityCut.c MajorityCut/MajorityCut.c MajorityCut/MCLPS.c 
+	gcc test/test_MajorityCut.c MajorityCut/MajorityCut.c MajorityCut/MCLPS.c -o bin/MajorityCut
 
-SingleCut: SingleCut.c test_SingleCut.c
-	gcc test_SingleCut.c  SingleCut.c  -o SingleCut
+SingleCut: SingleCut/SingleCut.c test/test_SingleCut.c
+	gcc test/test_SingleCut.c  SingleCut/SingleCut.c  -o bin/SingleCut
 
-BatchedCut: BatchedCut.c BCGFC.c test_BatchedCut.c
-	gcc test_BatchedCut.c BatchedCut.c BCGFC.c  -o BatchedCut
+BatchedCut: BatchedCut/BatchedCut.c  BatchedCut/BCGFC.c test/test_BatchedCut.c
+	gcc test/test_BatchedCut.c BatchedCut/BatchedCut.c BatchedCut/BCGFC.c  -o bin/BatchedCut
 
 
