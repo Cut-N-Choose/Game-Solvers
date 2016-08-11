@@ -1,4 +1,4 @@
-#include "MajorityCut.h"
+#include "../MajorityCut/MajorityCut.h"
 int main()
 {
     int s=40;

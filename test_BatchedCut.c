@@ -1,4 +1,4 @@
-#include "BatchedCut.h"
+#include "../BatchedCut/BatchedCut.h"
 int main()
 {
     int N=2000;

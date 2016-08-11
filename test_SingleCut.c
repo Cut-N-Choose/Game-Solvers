@@ -1,4 +1,4 @@
-#include "SingleCut.h"
+#include "../SingleCut/SingleCut.h"
 int main()
 {
     int s=40;
